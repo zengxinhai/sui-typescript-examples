@@ -1,13 +1,15 @@
-### Simple Transfer
+# How to use?
 
-```typescript
-/** Import the SDK **/
-import { TransactionBlock } from '@mysten/sui.js';
+## Install
+`npm install`
 
-/** Compose the transaction block **/
-const tx = new TransactionBlock();
-tx.transferObjects([tx.object('objectId')], tx.pure('sender'));
+*optional*
+If you want to use publish package, please make sure you have sui cli installed.
 
-/** Sign and send the transaction block **/
-signer.signAndExecuteTransactionBlock({ transactionBlock: tx }).then();
-```
+## Env
+
+Create a `.env` file. Refer to the `.env.example` for fields
+
+## Run flashloan example
+
+`ts-node src/flash-loan.ts`
